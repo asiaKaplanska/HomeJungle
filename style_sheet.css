@@ -1,0 +1,177 @@
+body {
+    background-color: white;
+}
+
+h1, h2, h3, button, footer {
+    font-family: "Segoe Script", cursive;
+}
+
+h4, nav, .container, .containerLogin {
+    font-family: "Bahnschrift", sans-serif
+}
+
+h2 {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+}
+
+h1 {
+    color: teal;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px mediumpurple;
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: teal;
+}
+
+h3 {
+    background-color: teal;
+    padding: 5px;
+    border-style: hidden;
+    border-radius: 10px;
+    color: lavender;
+    font-size: 15px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+img:hover {
+    opacity: 70%;
+}
+
+button {
+    display: inline-block;
+    background-color: teal;
+    border: none;
+    color: lavender;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+nav {
+    background-color: lavender;
+    color: black;
+    padding: 5px;
+    border-style: hidden;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: teal;
+    color: lavender;
+    border-radius: 10px
+}
+
+footer {
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    color: teal;
+    border-top-style: solid;
+    border-top-color: teal;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.leftColumn{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.rightColumn div{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.containerLogin {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.containerLogin div {
+    background-color: white;
+   text-align: center;
+    width: 700px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
